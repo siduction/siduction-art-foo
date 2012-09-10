@@ -5,9 +5,9 @@ Maintainer: Alf Gaida <agaida@siduction.org>
 XSBC-Original-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 9),
     inkscape,
+    imagemagick,
     perl,
     perlmagick,
-    imagemagick,
     libxml-parser-perl,
     fonts-droid
 Standards-Version: 3.9.3
