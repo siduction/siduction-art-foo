@@ -1,9 +1,9 @@
 all:
-	for i in  desperado-reloaded; \
+	for i in  razorqt-lu-edition; \
 		do $(MAKE) -C $$i $@; done
 
 clean:
-	for i in  desperado-reloaded; \
+	for i in  razorqt-lu-edition; \
 		do $(MAKE) -C $$i $@; done
 
 distclean: clean

@@ -2,7 +2,7 @@
 
 set -e
 
-RELEASE="razorqtluedition:RazorQt-LU-Edition:12.1.6:
+RELEASE="razorqt-lu-edition:RazorQt-LU-Edition:12.1.6:
 "
 # clean up obsolete stuff
 rm -f	./debian/*.install \
