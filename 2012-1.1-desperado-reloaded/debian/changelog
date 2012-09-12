@@ -1,3 +1,28 @@
+siduction-art-desperado-reloaded (2012.1.26) unstable; urgency=low
+
+  * bugtracker icons, closes #825
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 08 Sep 2012 23:27:28 +0200
+
+siduction-art-desperado-reloaded (2012.1.25) unstable; urgency=low
+
+  * orange back to 90 px
+  * change wallpaper/*grub.svg
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Jun 2012 18:19:54 +0200
+
+siduction-art-desperado-reloaded (2012.1.23) unstable; urgency=low
+
+  * orange line at 120 px bei 4:3 (1600x1200)
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Jun 2012 16:33:09 +0200
+
+siduction-art-desperado-reloaded (2012.1.22) unstable; urgency=low
+
+  * orange line at 90px in all original size
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Jun 2012 14:53:39 +0200
+
 siduction-art-desperado-reloaded (2012.1.21) unstable; urgency=low
 
   * desperado-reloaded preparation part I. Make things build.
