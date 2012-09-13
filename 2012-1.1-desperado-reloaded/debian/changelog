@@ -1,3 +1,9 @@
+siduction-art-desperado-reloaded (2012.1.27) unstable; urgency=low
+
+  * cleanup and build within new structure, refs #789 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 13 Sep 2012 01:58:48 +0200
+
 siduction-art-desperado-reloaded (2012.1.26) unstable; urgency=low
 
   * bugtracker icons, closes #825
