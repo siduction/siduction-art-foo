@@ -1,3 +1,9 @@
+siduction-art-razorqt-lu-edition (2012.1.26) unstable; urgency=low
+
+  * really big cleanup and rebuild wihtin new structure
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 14 Sep 2012 00:29:46 +0200
+
 siduction-art-razorqt-lu-edition (2012.1.25) unstable; urgency=low
 
   * rebuild siduction theme
