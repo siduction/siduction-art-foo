@@ -1,12 +1,12 @@
 siduction-art-razorqt-lu-edition (2012.1.25) unstable; urgency=low
 
-  * rebuild siduction theme
+  * rebuild siduction theme 
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 03:10:03 +0200
 
 siduction-art-razorqt-lu-edition (2012.1.24) unstable; urgency=low
 
-  * razorqt --> rqt
+  * razorqt --> rqt 
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 01:23:40 +0200
 
