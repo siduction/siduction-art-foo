@@ -1,3 +1,9 @@
+siduction-art-razorqt (2012.1.22) UNRELEASED; urgency=low
+
+  * razorqt cleanup part1  
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 14 Sep 2012 01:22:50 +0200
+
 siduction-art-razorqt (2012.1.21) unstable; urgency=low
 
   * desperado-reloaded preparation part I. Make things build.
