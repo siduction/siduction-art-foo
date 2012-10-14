@@ -1,8 +1,7 @@
 #!/bin/sh
 set -e
 
-RELEASE="foo:Foo-Name:99.9.9:
-"
+RELEASE="foo:Foo-Name:99-9.9"
 # clean up obsolete stuff
 rm -f ./debian/*.install \
     ./debian/*.links \
