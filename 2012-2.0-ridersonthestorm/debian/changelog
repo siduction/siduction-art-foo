@@ -1,3 +1,10 @@
+siduction-art-ridersonthestorm (0.1.5) unstable; urgency=low
+
+  * new linking of pictures, some Makefile foo
+  * rqt must be ported from devel
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 02:27:37 +0200
+
 siduction-art-ridersonthestorm (0.1.4) unstable; urgency=low
 
   * new numbering depending on release
