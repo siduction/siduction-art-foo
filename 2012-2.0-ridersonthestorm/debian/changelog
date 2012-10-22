@@ -1,3 +1,9 @@
+siduction-art-ridersonthestorm (0.1.6) unstable; urgency=low
+
+  * rqt ported and improved from dev. UNTESTED
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 03:33:12 +0200
+
 siduction-art-ridersonthestorm (0.1.5) unstable; urgency=low
 
   * new linking of pictures, some Makefile foo
