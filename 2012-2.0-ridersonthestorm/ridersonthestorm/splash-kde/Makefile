@@ -24,17 +24,17 @@ prepare:
 
 Preview:
 	inkscape --without-gui --export-width=300 --export-height=225 \
-		--export-png="$(THEME)/$@.png" background.svg
+		--export-png="$(THEME)/$@.png" 1600x1280.svg
 
 background:
-#	inkscape --without-gui --export-width=1280 --export-height=1024 \
-#		--export-png="$(THEME)/1280x1024/$@.png" $@-medium.svg
-#	inkscape --without-gui --export-width=1600 --export-height=1200 \
-#		--export-png="$(THEME)/1600x1200/$@.png" $@.svg
-#	inkscape --without-gui --export-width=1920 --export-height=1080 \
-#		--export-png="$(THEME)/1920x1080/$@.png" $@-really-wide.svg
-#	inkscape --without-gui \
-#		--export-png="$(THEME)/$(CONTROLDIR)/$@.png" $@-wide.svg
+	inkscape --without-gui --export-width=1280 --export-height=1024 \
+		--export-png="$(THEME)/1280x1024/$@.png" 1600x1200.svg
+	inkscape --without-gui --export-width=1600 --export-height=1200 \
+		--export-png="$(THEME)/1600x1200/$@.png" 1600x1200.svg
+	inkscape --without-gui --export-width=1920 --export-height=1080 \
+		--export-png="$(THEME)/1920x1080/$@.png" 1920x1080.svg
+	inkscape --without-gui \
+		--export-png="$(THEME)/$(CONTROLDIR)/$@.png" 1920x1200.svg
 
 bullet:
 	inkscape --without-gui \
