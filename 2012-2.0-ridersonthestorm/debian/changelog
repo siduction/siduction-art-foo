@@ -1,6 +1,7 @@
 siduction-art-ridersonthestorm (0.1.6) unstable; urgency=low
 
   * rqt ported and improved from dev. UNTESTED
+  * Provides removed. useless crap
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 03:33:12 +0200
 

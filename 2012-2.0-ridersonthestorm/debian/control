@@ -29,7 +29,6 @@ Vcs-Browser: http://git.siduction.org/packages/siduction-repository/siduction-ar
 
 Package: siduction-art-kde-ridersonthestorm
 Architecture: all
-Provides: siduction-art-kde-theme
 Depends: ${misc:Depends},
  siduction-art-ksplash-ridersonthestorm,
  siduction-art-kdm-ridersonthestorm
@@ -82,7 +81,6 @@ Description: siduction wallpaper for the 12-2.0 release
 
 Package: siduction-art-xfce-ridersonthestorm
 Architecture: all
-Provides: siduction-art-xfce-theme
 Depends: ${misc:Depends},
  siduction-art-xsplash-ridersonthestorm
 Recommends: siduction-art-wallpaper-ridersonthestorm,
