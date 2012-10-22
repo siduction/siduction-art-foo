@@ -16,6 +16,7 @@ Vcs-Browser: http://git.siduction.org/packages/siduction-repository/siduction-ar
 
 #Package: siduction-art-gdm-ridersonthestorm
 #Architecture: all
+#Provides: siduction-art-gdm
 #Depends: ${misc:Depends},
 #		 gdm
 #Description: GDM theme for siduction 12-2.0 release
@@ -34,6 +35,7 @@ Depends: ${misc:Depends},
  siduction-art-kdm-ridersonthestorm
 Recommends: siduction-art-wallpaper-ridersonthestorm,
  dmz-cursor-theme
+Provides: siduction-art-kde
 Description: KDE theme for the siduction 12-2.0 release
  release specific metapackage depending on ksplash, kdm and KDE themes to be
  used in combination with the K Desktop Environment. This package also
@@ -45,6 +47,7 @@ Package: siduction-art-kdm-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
 		 kdm
+Provides: siduction-art-kdm
 Description: KDM theme for the siduction 12-2.0 release
  release specific artwork theme for the KDM display manager to be used in
  combination with the K Desktop Environment.
@@ -58,6 +61,7 @@ Package: siduction-art-ksplash-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
  kdebase-workspace-bin
+Provides: siduction-art-ksplash
 Description: KDE ksplash theme for the siduction 12-2.0 release
  release specific KDE ksplash theme, using the default ksplash engine.
  .
@@ -68,7 +72,7 @@ Description: KDE ksplash theme for the siduction 12-2.0 release
 
 Package: siduction-art-wallpaper-ridersonthestorm
 Architecture: all
-Provides: siduction-art-wallpaper-theme
+Provides: siduction-art-wallpaper
 Depends: ${misc:Depends}
 Description: siduction wallpaper for the 12-2.0 release
  release specific wallpapers, compatible with the K Desktop Environment, Xfce,
@@ -85,6 +89,7 @@ Depends: ${misc:Depends},
  siduction-art-xsplash-ridersonthestorm
 Recommends: siduction-art-wallpaper-ridersonthestorm,
  dmz-cursor-theme
+Provides: siduction-art-xfce
 Description: Xfce theme for the siduction 12-2.0 release
  release specific metapackage depending on xfce4-session, gdm3 and Xfce themes
  to be used in combination with the Xfce desktop environment.
@@ -95,6 +100,7 @@ Package: siduction-art-xsplash-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
  xfce4-session
+Provides: siduction-art-xsplash
 Description: Xfce splash theme for the siduction 12-2.0 release
  release specific Xfce splash theme, based on the balou theme engine.
  .
@@ -106,15 +112,8 @@ Description: Xfce splash theme for the siduction 12-2.0 release
 Package: siduction-art-rqt-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends}
+Provides: siduction-art-rqt
 Description: Razor-Qt artwork for the siduction 12-2.0 release
  release specific Razor-Qt artwort.
  .
  Razor-Qt artwork for: sidcution 12-2.0 (Riders-On-The-Storm)
-
-#Package: siduction-art-icons
-#Architecture: all
-#Depends: ${misc:Depends}
-#Description: Siduction Icons 12-2.0 (Riders-On-The-Storm)
-# Slow growing icon library. 
-# .
-# Siduction icon-set for: siduction 12-2.0 (Riders-On-The-Storm)
