@@ -14,6 +14,8 @@ Standards-Version: 3.9.3
 Vcs-Git: git://git.siduction.org/packages/siduction-repository/siduction-art-foo.git
 Vcs-Browser: http://git.siduction.org/packages/siduction-repository/siduction-art-foo.git
 
+
+## GNOME ARTWORK ##
 #Package: siduction-art-gdm-ridersonthestorm
 #Architecture: all
 #Provides: siduction-art-gdm
@@ -28,6 +30,8 @@ Vcs-Browser: http://git.siduction.org/packages/siduction-repository/siduction-ar
 # This package does not override existing theme configurations and needs to be
 # selected manually.
 
+
+## KDE ARTWORK ##
 Package: siduction-art-kde-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
@@ -46,7 +50,7 @@ Description: KDE theme for the siduction 12-2.0 release
 Package: siduction-art-kdm-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
-		 kdm
+ kdm
 Provides: siduction-art-kdm
 Description: KDM theme for the siduction 12-2.0 release
  release specific artwork theme for the KDM display manager to be used in
@@ -70,24 +74,30 @@ Description: KDE ksplash theme for the siduction 12-2.0 release
  This package does not override existing theme configurations and needs to be
  selected manually.
 
-Package: siduction-art-wallpaper-ridersonthestorm
-Architecture: all
-Provides: siduction-art-wallpaper
-Depends: ${misc:Depends}
-Description: siduction wallpaper for the 12-2.0 release
- release specific wallpapers, compatible with the K Desktop Environment, Xfce,
- LXDE and GNOME.
- .
- Wallpapers for: siduction 12-2.0 (Riders-On-The-Storm)
- .
- This package does not override existing theme configurations and needs to be
- selected manually.
+## LXDE-ARTWORK ###
 
+
+### NOX-ARTORK ###
+
+
+## RAZOR-QT ARTWORK ##
+Package: siduction-art-rqt-ridersonthestorm
+Architecture: all
+Depends: ${misc:Depends},
+ lightdm-gtk-greeter 
+Provides: siduction-art-rqt
+Description: Razor-Qt artwork for the siduction 12-2.0 release
+ release specific Razor-Qt artwort.
+ .
+ Razor-Qt artwork for: sidcution 12-2.0 (Riders-On-The-Storm)
+
+## XFCE ARTWORK ##
 Package: siduction-art-xfce-ridersonthestorm
 Architecture: all
 Depends: ${misc:Depends},
- siduction-art-xsplash-ridersonthestorm
-Recommends: siduction-art-wallpaper-ridersonthestorm,
+ lightdm-gtk-greeter 
+ siduction-art-xsplash-ridersonthestorm,
+ siduction-art-wallpaper-ridersonthestorm,
  dmz-cursor-theme
 Provides: siduction-art-xfce
 Description: Xfce theme for the siduction 12-2.0 release
@@ -109,11 +119,17 @@ Description: Xfce splash theme for the siduction 12-2.0 release
  This package does not override existing theme configurations and needs to be
  selected manually.
 
-Package: siduction-art-rqt-ridersonthestorm
+## COMMON WALLPAPERS ##
+Package: siduction-art-wallpaper-ridersonthestorm
 Architecture: all
+Provides: siduction-art-wallpaper
 Depends: ${misc:Depends}
-Provides: siduction-art-rqt
-Description: Razor-Qt artwork for the siduction 12-2.0 release
- release specific Razor-Qt artwort.
+Description: siduction wallpaper for the 12-2.0 release
+ release specific wallpapers, compatible with the K Desktop Environment, Xfce,
+ LXDE and GNOME.
  .
- Razor-Qt artwork for: sidcution 12-2.0 (Riders-On-The-Storm)
+ Wallpapers for: siduction 12-2.0 (Riders-On-The-Storm)
+ .
+ This package does not override existing theme configurations and needs to be
+ selected manually.
+
