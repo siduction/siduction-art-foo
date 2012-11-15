@@ -1,10 +1,11 @@
-siduction-art-ridersonthestorm (0.1.8) UNRELEASED; urgency=low
+siduction-art-ridersonthestorm (0.1.8) unstable; urgency=low
 
   * sync with paintitblack
   * new package grub-theme-siduction-ridersonthestorm
   * fix some bugs 
+  * fix packages to build
 
- -- Alf Gaida <agaida@siduction.org>  Thu, 15 Nov 2012 19:54:57 +0100
+ -- Alf Gaida <agaida@siduction.org>  Thu, 15 Nov 2012 22:16:31 +0100
 
 siduction-art-ridersonthestorm (0.1.7) unstable; urgency=low
 
