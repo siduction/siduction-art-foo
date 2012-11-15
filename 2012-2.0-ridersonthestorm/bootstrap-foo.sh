@@ -49,3 +49,9 @@ done
 sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
     ./debian/templates/siduction-art-wallpaper-CODENAME_SAFE.links.in \
     > ./debian/siduction-art-wallpaper-$(echo ${RELEASE} | cut -d\: -f1).links
+
+## grub theme
+
+sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
+    ./debian/templates/grub-theme-siduction-CODENAME_SAFE.install.in \
+    > ./debian/grub-theme-siduction-$(echo ${RELEASE} | cut -d\: -f1).install

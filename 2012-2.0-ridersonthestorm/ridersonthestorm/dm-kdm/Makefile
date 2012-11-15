@@ -5,7 +5,7 @@ BITMAPS= files background foreground footer
 
 all: $(BITMAPS)
 
-files:
+files: clean
 	mkdir $(THEME)
 	cp session.png $(THEME)
 	cp system.png $(THEME)
@@ -17,15 +17,14 @@ files:
 background:
 	inkscape --without-gui --export-width=1600 --export-height=1200 \
 		--export-png="$(THEME)/background.png" $@.svg
-		
+
 foreground:
 	inkscape --without-gui --export-width=1600 --export-height=1200 \
 		--export-png="$(THEME)/foreground.png" $@.svg
-
 
 footer:
 	inkscape --without-gui --export-width=1920 --export-height=107 \
 		--export-png="$(THEME)/footer.png" $@.svg
 
-clean:	
+clean:
 	rm -rf $(THEME)

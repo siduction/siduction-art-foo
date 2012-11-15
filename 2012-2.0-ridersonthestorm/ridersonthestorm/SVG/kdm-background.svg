@@ -14,7 +14,7 @@
    height="1200"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48+devel r11815"
+   inkscape:version="0.48+devel r"
    sodipodi:docname="kdm-background.svg">
   <defs
      id="defs4">
@@ -6694,9 +6694,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.28631441"
-     inkscape:cx="898.13456"
-     inkscape:cy="449.86765"
+     inkscape:zoom="0.40490972"
+     inkscape:cx="487.17951"
+     inkscape:cy="560.63117"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -6711,7 +6711,60 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     borderlayer="true" />
+     borderlayer="true"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-page="true"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,1200"
+       id="guide1334" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,1200"
+       id="guide1336" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="1605,-5.0000026"
+       id="guide1338" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1600,1200"
+       id="guide1340" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-2.5,1205"
+       id="guide1384" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-5,1202.5"
+       id="guide1386" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1605.0974,1235.9664"
+       id="guide1406" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="1605,-2.6171874e-06"
+       id="guide1408" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="45,1155"
+       id="guide1436" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="22.5,1155"
+       id="guide1438" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1560,1155"
+       id="guide1458" />
+  </sodipodi:namedview>
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -6730,12 +6783,12 @@
      id="layer1"
      transform="translate(0,147.63782)">
     <rect
-       style="fill:#e6e6e6;fill-opacity:1;stroke:none"
+       style="fill:#000000;fill-opacity:1;stroke:none"
        id="rect2428"
-       width="1623.1235"
-       height="1235.4235"
-       x="-11.663213"
-       y="-174.65736"
+       width="1610.0001"
+       height="1210"
+       x="-5"
+       y="-152.63782"
        inkscape:export-filename="/home/se7en/desperadoBW.png"
        inkscape:export-xdpi="90.005646"
        inkscape:export-ydpi="90.005646" />
@@ -6756,19 +6809,35 @@
            transform="matrix(1.1785216,0,0,1.1829341,-1393.5471,-667.09574)" />
       </g>
     </g>
-    <text
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       id="rect2428-9"
+       width="5"
+       height="5"
+       x="-5"
+       y="-152.63782"
+       inkscape:export-filename="/home/se7en/desperadoBW.png"
+       inkscape:export-xdpi="90.005646"
+       inkscape:export-ydpi="90.005646" />
+    <rect
+       style="fill:#ff0000;fill-opacity:1;stroke:none"
+       id="rect2428-9-6"
+       width="5"
+       height="5"
+       x="1600"
+       y="1052.3622"
+       inkscape:export-filename="/home/se7en/desperadoBW.png"
+       inkscape:export-xdpi="90.005646"
+       inkscape:export-ydpi="90.005646" />
+    <flowRoot
        xml:space="preserve"
-       style="font-size:111.76831055px;fill:#ff0000"
-       x="122.92953"
-       y="76.87088"
-       id="text10158"><tspan
-         sodipodi:role="line"
-         id="tspan10160"
-         x="122.92953"
-         y="76.87088">Riders on the storm </tspan><tspan
-         sodipodi:role="line"
-         x="122.92953"
-         y="216.58127"
-         id="tspan10162">kdm-background.svg</tspan></text>
-  </g>
+       id="flowRoot1428"
+       style="fill:#ff0000;fill-opacity:0.99171269;-inkscape-font-specification:Sans;font-family:Sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:22.5px;text-anchor:start;text-align:start;writing-mode:lr;line-height:100%"><flowRegion
+         id="flowRegion1430"><rect
+           id="rect1432"
+           width="790.29962"
+           height="271.6655"
+           x="0"
+           y="96.050217" /></flowRegion><flowPara
+         id="flowPara1434" /></flowRoot>  </g>
 </svg>
