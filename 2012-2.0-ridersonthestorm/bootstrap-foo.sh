@@ -2,6 +2,7 @@
 set -e
 
 RELEASE="ridersonthestorm:Riders-On-The-Storm:12-2.0"
+
 # clean up obsolete stuff
 rm -f ./debian/*.install \
     ./debian/*.links \
@@ -19,8 +20,10 @@ sed -e "s/\@ALL_CODENAME_SAFE\@/${ALL_CODENAME_SAFE}/g" \
 [ -d ./debian ] || exit 1
 
 TEMPLATE_CHANGELOG="./debian/templates/changelog.in"
+if [ ! -e ./debian/changelog ]; then 
 sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
     ${TEMPLATE_CHANGELOG} > ./debian/changelog
+fi
 
 TEMPLATE_SRC="./debian/templates/control.source.in"
 sed     -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
@@ -35,11 +38,22 @@ sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
     ${TEMPLATES_BIN} >> ./debian/control
 
 # write debian/*.install from templates
-for k in kde kdm ksplash wallpaper xfce xsplash; do
+for k in kde kdm ksplash rqt wallpaper xfce xsplash; do
     if [ -r  ./debian/templates/siduction-art-${k}-CODENAME_SAFE.install.in ]; then
         sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
             ./debian/templates/siduction-art-${k}-CODENAME_SAFE.install.in \
             > ./debian/siduction-art-${k}-$(echo ${RELEASE} | cut -d\: -f1).install
+    else
+        continue
+    fi
+done
+
+# write debian/*.postinst from templates
+for k in kde kdm ksplash rqt wallpaper xfce xsplash; do
+    if [ -r  ./debian/templates/siduction-art-${k}-CODENAME_SAFE.postinst.in ]; then
+        sed -e s/\@CODENAME_SAFE\@/$(echo ${RELEASE} | cut -d\: -f1)/g \
+            ./debian/templates/siduction-art-${k}-CODENAME_SAFE.postinst.in \
+            > ./debian/siduction-art-${k}-$(echo ${RELEASE} | cut -d\: -f1).postinst
     else
         continue
     fi
