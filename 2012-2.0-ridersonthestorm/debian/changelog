@@ -1,3 +1,31 @@
+siduction-art-ridersonthestorm (0.1.8) UNRELEASED; urgency=low
+
+  * sync with paintitblack
+  * new package grub-theme-siduction-ridersonthestorm
+  * fix some bugs 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 15 Nov 2012 19:54:57 +0100
+
+siduction-art-ridersonthestorm (0.1.7) unstable; urgency=low
+
+  * new provides: siduction-art-$foo-$release provides siduction-art-$foo
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 17:21:31 +0200
+
+siduction-art-ridersonthestorm (0.1.6) unstable; urgency=low
+
+  * rqt ported and improved from dev. UNTESTED
+  * Provides removed. useless crap
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 03:33:12 +0200
+
+siduction-art-ridersonthestorm (0.1.5) unstable; urgency=low
+
+  * new linking of pictures, some Makefile foo
+  * rqt must be ported from devel
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 22 Oct 2012 02:27:37 +0200
+
 siduction-art-ridersonthestorm (0.1.4) unstable; urgency=low
 
   * new numbering depending on release
