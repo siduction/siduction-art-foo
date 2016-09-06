@@ -1,0 +1,117 @@
+#!/bin/sh
+set -e
+
+if [ -f ./debian/rules ]; then
+    echo "Running debuild clean and  delete the old debian/rules now. "
+    echo "Please run bootstrap again!"
+    [ -f ./debian/changelog ] && debuild -d clean
+    rm -f debian/rules
+    exit 1
+fi
+
+if [ -f VERSION ]; then
+    . ./VERSION
+else
+    echo "No VERSION-File, exit!"
+    exit 1
+fi
+
+if [ -f FLAVOUR ]; then
+    . ./FLAVOUR
+else
+    echo "No FLAVOUR-File, exit!"
+    exit 1
+fi
+
+# clean up obsolete stuff
+rm -f ./debian/*.install \
+      ./debian/install \
+      ./debian/*.links \
+      ./debian/ĺinks \
+      ./debian/*.postinst \
+      ./debian/postinst \
+      ./debian/*.postrm \
+      ./debian/postrm  \
+      ./debian/*.prerm \
+      ./debian/prerm \
+      ./debian/*.preinst \
+      ./debian/preinst
+
+
+[ -d ./debian ] || exit 1
+
+
+if [ ! -e ./debian/changelog ]; then
+    sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+        -e "s/\@CODENAME\@/${DESCRIPTION}/g" \
+        -e "s/\@VERSION\@/${VERSION}/g" \
+        -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+        -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+        ./debtemplate/changelog \
+        > ./debian/changelog
+fi
+
+sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+    -e "s/\@CODENAME\@/${DESCRIPTION}/g" \
+    -e "s/\@VERSION\@/${VERSION}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/control \
+    > ./debian/control
+
+sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+    -e "s/\@CODENAME\@/${DESCRIPTION}/g" \
+    -e "s/\@VERSION\@/${VERSION}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/get-template \
+    > ./debian/get-template
+
+sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+    -e "s/\@CODENAME\@/${DESCRIPTION}/g" \
+    -e "s/\@VERSION\@/${VERSION}/g" \
+    -e "s/\@FLAVOUR\@/${FLAVOUR}/g" \
+    -e "s/\@DISPLAY\@/${DISPLAY}/g" \
+    ./debtemplate/rules \
+    > ./debian/rules
+chmod 755 ./debian/rules
+
+
+# if [ "${FLAVOUR}" = 'kde' ]; then
+#    sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#        templates/debian/CODENAME_SAFE-kde.install \
+#        > ./debian/kde.install
+
+#    sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#        templates/debian/CODENAME_SAFE.install \
+#        > ./debian/kde.install
+
+
+#        sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#            templates/debian/CODENAME_SAFE-kde.postinst \
+#            > ./debian/${NAME}.postinst
+
+
+
+#        sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#            templates/debian/CODENAME_SAFE.postrm \
+#            > ./debian/${NAME}.postrm
+
+
+#        sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#            templates/debian/CODENAME_SAFE.links \
+#            > ./debian/${NAME}.links
+
+#       sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#            templates/ksplash/description.txt \
+#            > ./ksplash/description.txt
+
+#       sed -e "s/\@CODENAME_SAFE\@/${NAME}/g" \
+#            templates/ksplash/Theme.rc \
+#            > ./ksplash/Theme.rc
+#fi
+
+#for res in 1024x768 1280x1024 1600x1200 1920x1200 ; do
+#    sed -e "s/\@CODENAME_SAFE\@/${DISPLAY}/g" ../templates/artwork/svg/kde-splash-$res.svg \
+#    > ./artwork/svg/kde-splash-$res.svg
+#done
