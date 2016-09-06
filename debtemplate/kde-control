@@ -1,4 +1,4 @@
-Source: whiteroom-kde-artwork
+Source: @CODENAME_SAFE@-kde-artwork
 Section: graphics
 Priority: extra
 Maintainer: Alf Gaida <agaida@siduction.org>
@@ -14,22 +14,22 @@ Standards-Version: 3.9.8
 Vcs-Git: git://git.siduction.org/packages/siduction-repository/siduction-art-foo.git
 Vcs-Browser: http://git.siduction.org/packages/siduction-repository/siduction-art-foo.git
 
-Package: whiteroom-kde-artwork
+Package: @CODENAME_SAFE@-kde-artwork
 Architecture: all
 Depends:
  ${misc:Depends},
- whiteroom-ksplash,
- whiteroom-wallpapers,
+ @CODENAME_SAFE@-ksplash,
+ @CODENAME_SAFE@-wallpapers,
  siduction-icons,
-Description: KDE theme for WhiteRoom
+Description: KDE theme for @CODENAME@
  Release specific metapackage depending on ksplash and KDE themes to be
  used in combination with the K Desktop Environment.
 
-Package: whiteroom-ksplash
+Package: @CODENAME_SAFE@-ksplash
 Architecture: all
 Depends:
  ${misc:Depends},
-Description: KDE ksplash theme for WhiteRoom
+Description: KDE ksplash theme for @CODENAME@
  Release specific KDE ksplash theme, using the default ksplash engine.
  .
  This package does not override existing theme configurations and needs
